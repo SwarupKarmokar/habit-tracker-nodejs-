@@ -1,0 +1,25 @@
+{
+  "name": "habittracking",
+  "version": "1.0.0",
+  "description": "this nodejs app track our daily habit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon index.js"
+  },
+  "author": "Swarup Karmokar",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-flash-notification": "^0.5.0",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.10.0",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
+  }
+}
