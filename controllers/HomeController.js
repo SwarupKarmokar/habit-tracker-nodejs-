@@ -1,8 +1,5 @@
-// module.exports.home = (req, res) => {
-//     res.render('home', {
-//         title: 'Habbit Tracker App'
-//     });
-// }
+// CREATING FUNCTION WHICH CONTROLL THE DATE TIME ETC 
+
 const User = require('../models/UserSchema');
 const Habit = require('../models/HabitSchema');
 
