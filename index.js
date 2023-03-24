@@ -1,6 +1,8 @@
 //import express module
 const express = require('express');
-const port = 8000;
+require('dotenv').config();
+
+const port = process.env.PORT || 5000;
 
 const app = express();
 const cookieParser = require('cookie-parser');
@@ -47,11 +49,11 @@ app.use(session({
     },
     store: MongoStore.create({
         mongoUrl: 'mongodb://127.0.0.1:27017/habit_db',
-        autoRemove : 'disabled'
+        autoRemove: 'disabled'
     },
         (err) => {
             console.log(err);
-      }
+        }
     )
 }))
 
@@ -68,7 +70,7 @@ app.use(customMware.setFlash);
 // Using Express Router 
 app.use('/', require('./routes/index'));
 
-app.listen(port, (err)=>{
+app.listen(port, (err) => {
     if (err) {
         console.log(`error in running on server${port}`)
         return;
